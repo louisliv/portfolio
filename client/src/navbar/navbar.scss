@@ -1,0 +1,60 @@
+.main-navbar {
+    width: 100%;
+    position: fixed;
+    -webkit-align-items: baseline !important;
+    align-items: baseline !important;
+
+    #contacts {
+        .contact-list {
+            list-style: none;
+            padding-left: 0px;
+
+            .contact {
+                padding: 10px;
+                cursor: pointer;
+
+                .name {
+                    margin-bottom: 0px;
+                }
+
+                &:hover {
+                    background: #32465a;
+                }
+            }
+        }
+    }
+
+    #bottom-bar {
+        bottom: 0px;
+        display: flex;
+        position: fixed;
+
+        .dropdown {
+            flex: 1;
+        }
+
+        button {
+            font-size: .85rem;
+
+            &#settings {
+                width: 100%
+            }
+        }
+    }
+    
+    .fa-custom-counter {
+        transform: scale(0.7) translateX(60%) translateY(-50%);
+    }
+}
+
+#profile-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+
+    &.online {
+        border-color: green;
+    }
+}
