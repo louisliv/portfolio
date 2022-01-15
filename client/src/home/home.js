@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
+import TerminalWrapper from '../terminal/terminal';
 
 import {
     Container, 
@@ -6,20 +7,18 @@ import {
     Col
 } from 'reactstrap';
 
-class Home extends Component {
-    render() {
-        return (
-            <div>
-                <Container fluid>
-                    <Row className="main-row">
-                        <Col xs="12">
-                            <div>Home</div>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
-        );
-    }
+const Home = () => {
+    return (
+        <div>
+            <Container fluid>
+                <Row className="main-row">
+                    <Col xs="12">
+                        <TerminalWrapper />
+                    </Col>
+                </Row>
+            </Container>
+        </div>
+    );
 }
 
 export default Home;

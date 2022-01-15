@@ -1,9 +1,9 @@
-import TerminalRoute from './terminal';
+import TerminalWrapper from './terminal';
 
 const terminalState = {
     name: 'terminal',
     url: '/terminal',
-    component: TerminalRoute,
+    component: TerminalWrapper,
     data: {
         excludeSidebar: true
     },
